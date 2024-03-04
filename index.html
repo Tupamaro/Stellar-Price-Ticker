@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+</head>
+<body>
+<!-- Root element where the React component will be mounted -->
+<div id="root"></div>
+
+<!-- Include React and ReactDOM libraries -->
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+<!-- Include the StellarPriceTicker component script -->
+<script src="StellarPriceTicker.js"></script>
+
+<script>
+    // Mount the StellarPriceTicker component into the root element
+    ReactDOM.render(
+        React.createElement(StellarPriceTicker),
+        document.getElementById('root')
+    );
+</script>
+</body>
+</html>
